@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-family: "Inter", sans-serif;
+  }
+
+body {
+    font-family: arial, sans-serif;
+    background-color: #F5F5F5;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 999px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    margin: 24px 240px 0;
+    padding: 14px;
+}
+
+header nav button {
+    border: 1px solid #eaecf0;
+    border-radius: 999px;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 150%;
+    color: #0d1421;
+    background-color: #fff;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0d1421;    
+    margin-right: 8px;
+}
+
+.navigation button:last-child {
+    margin-right: 0px;
+}
+
+.logo {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo p {
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    color: #354153;
+}
+
+.action {
+    margin-left: auto;
+}
+
+.action button {
+    padding: 10px;
+    background-color: #fff;
+    margin-left: 4px;
+}
+
+.categories {
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    padding: 32px 274px;
+}
+
+.categories p {
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 133%;
+    color: #0d1421;
+}
+
+.filter {
+    position: relative;
+}
+
+.filter-btn {
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    margin-left: auto;
+    border-radius: 999px;
+    padding: 8px 16px;
+    background: #fff;
+}
+
+.filter-btn p {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #354153;
+    user-select: none;
+}
+
+.filter-content {
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: 20px;
+    padding: 8px;
+    width: 240px;
+}
+
+.filter-content p {
+    padding: 0px 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #667085;
+}
+
+.filter-content label {
+    display: block;
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #354153;
+    user-select: none;
+}
+
+.filter-content label:hover {
+    background: #f2f4f7;
+}
+
+.filter-content label input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    position: relative;
+    padding-left: 30px; /* Отступ для метки */
+    cursor: pointer;
+}
+
+.checkbox-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 1px solid #eaecf0;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-label::before {
+    background-color: #000;
+    border-color: #eaecf0;
+    background-image: url(/images/check.svg);
+    background-size: 12px 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.checkbox-label.gray::before, 
+.checkbox input[type="checkbox"]:checked + .checkbox-label.gray::before {
+    background-color: #b0b0b0;
+}
+
+.checkbox-label.green::before, 
+.checkbox input[type="checkbox"]:checked + .checkbox-label.green::before {
+    background-color: #517455;
+}
+
+.checkbox-label.red::before, 
+.checkbox input[type="checkbox"]:checked + .checkbox-label.red::before {
+    background-color: #b05955;
+}
+
+.cards {
+    display: flex;
+    margin-left: 240px;
+}
+
+.card {
+    border-radius: 32px;
+    margin-right: 32px;
+    background: #fff;
+}
+
+.card:last-child {
+    margin-right: 0px;
+}
+
+.card img {
+    border-radius: 24px;
+    margin-bottom: 16px;
+}
+
+.description {
+    padding: 0px 24px 24px 24px;
+}
+
+.description .price {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 133%;
+    color: #0d1421;
+}
+
+.description .name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0d1421;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Варианта 14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navigation">
+                <button type="button">Посуда</button>
+                <button type="button">Текстиль</button>
+                <button type="button">Товары для дома</button>
+            </nav>
+            <div class="logo">
+                <img src="/images/Logo.svg" alt="Логотип">
+                <p>Вариант 14</p>
+            </div>
+            <div class="action">
+                <nav>
+                    <button type="button">
+                        <img src="/images/account.svg" alt="Личный кабинет">
+                    </button>
+                    <button type="button">
+                        <img src="/images/basket.svg" alt="Корзина">
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="categories">
+            <p>Все товары</p>
+            <details class="filter">
+                <!--Кнопка фильтра-->
+                <summary id="filter-btn" class="filter-btn">
+                    <img src="/images/filter.svg" alt="filter">
+                    <p>Фильтры</p>
+                </summary>
+
+                <!--Блок фильтра-->
+
+                <div class="filter-content">
+                    <p>Тип товара</p>
+                    <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkbox-label">Сумки</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox-label">Пледы</span>
+                    </label>
+                    <p>Цвет</p>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox-label gray">Серый</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkbox-label green">Зеленый</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox-label red">Красный</span>
+                    </label>
+                </div>  
+                
+            </details>
+        </section>
+
+        <!--Карточки товаров-->
+        <section class="cards">
+            <div class="card">
+                <img src="/images/image 1.png" alt="Сумка">
+                <div class="description">
+                    <p class="price">2 884 руб</p>
+                    <p class="name">Сумка мессенджер ДРЁМСЭКК</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/image 2.png" alt="Сумка">
+                <div class="description">
+                    <p class="price">2 884 руб</p>
+                    <p class="name">Сумка мессенджер ДРЁМСЭКК</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/image 3.png" alt="Плед">
+                <div class="description">
+                    <p class="price">714 руб</p>
+                    <p class="name">Плед ВОРКРАГЕ</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
