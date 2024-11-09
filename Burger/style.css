@@ -1,0 +1,173 @@
+@import url(reset.css);
+
+:root {
+    --font-family: "Montserrat", sans-serif;
+  }
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(180deg, #EDA418 47.4%, rgba(237, 164, 24, 0) 100%);
+    padding: 100px 130px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.logo p {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 25px;
+    color: #000;
+}
+
+.navigation {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 25px;
+    color: #000;
+}
+
+.nav-item:hover {
+    font-weight: 700;
+}
+
+.header-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-banner_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.banner-title {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 32px;
+    color: #000;
+}
+
+.banner-subtuitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.banner-button {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    background: #e52626;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.menu-title {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 45px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.menu {
+    padding: 0 87px 46px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px 45px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.menu-item p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    color: #000;
+}
+
+footer {
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #EDA61D 100%);
+    padding: 160px 0px 75px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.useful_rules {
+    display: flex;
+    gap: 100px;
+}
+
+.useful_rules-item {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}
+
+.useful_rules-item:hover {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+}
+
+.company-name {
+    margin-top: 45px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+}
+
+.copyright {
+    margin-top: 24px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
